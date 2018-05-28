@@ -1,0 +1,13 @@
+
+<h1>
+    Tydux Demo Angular
+</h1>
+
+<div>
+    <input type="text" ng-model="$ctrl.newEntryInput"/>
+    <button type="button" ng-click="$ctrl.addEntry()">add</button>
+</div>
+
+<ul>
+    <li ng-repeat="e in $ctrl.demoStore.state.entries">{{e}}</li>
+</ul>
